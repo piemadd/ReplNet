@@ -10,7 +10,7 @@ How stuff works
 This was inspired by the dead Replit Blog Chat protocol Codemonkey51 and I started thinking up before the entire idea of a chat within the Replit Blog's logs died down. This is my best attempt at reviving it.
 
 ### Repl Name
-To keep everything simplified, every repl running the protocol should be named `rptpn`. This simplifies storing information on other peers, which just makes everything easier and much more straight forward.
+To keep everything simplified, every repl running the protocol should be named `rptpn` (case insensitive). This simplifies storing information on other peers, which just makes everything easier and much more straight forward.
 
 ### Discovery
 Discovery is not only discouraged by me, but should be avoided in general. Having an entire network trying to ping `rptpn.[randomusername].repl.co` 24/7 would turn into a botnet faster than you think. This way, centralized directories (some of which are listed on [rptpn.com](https://www.rptpn.com/)) along with off-net communication are what will create links on the network.
