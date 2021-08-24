@@ -36,7 +36,7 @@ Endpoint|Request Type|Body|Successful Return|Failed Return
 -|-|-|-|-
 (On an already established websocket)|N/A|`{'type': 'text', 'content': '[message]'}`|`{'status': 'Recieved', 'additional_info': 'Message Successful'}`|`{'status': 'Failure', 'additional_info': 'Some sort of message rendering error occured.'}`
 (On an already established websocket)|N/A|`{'type': 'multimedia', 'content': '[link]'}`|`{'status': 'Recieved', 'additional_info': 'Message Successful'}`|`{'status': 'Failure', 'additional_info': 'Some sort of message rendering error occured.'}`
-`/api/update`|POST|Anything can be sent for the body as it causes the API to check for an update in the DB, as in any messages needing to be sent. If API spam is a concern, a client creator can choose to use this body to send some sort of authentication token, though at this time it is not required in any way.|`Success`|`IDK how, but I somehow failed`
+`/api/update`|POST|Anything can be sent for the body as it causes the API to check for an update in the DB, as in any messages needing to be sent. If API spam is a concern, a client creator can choose to use this body to send some sort of authentication token, though at this time it is not required in any way.|`Success`|`{'status': 'Failure', 'additional_info': '<info>'}`
 
 When it comes to an actual message, literally anything goes. A JSON object with its type being `text` or `multimedia` and its content either being a terminal-compatible ASCII string or the link to some sort of multimedia. It is literally that simple lol.
 
